@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import People from './People';
-import Loading from './Loading';
+import People from '../People/People';
+import Loading from '../Loading/Loading';
+import './app.css';
 const url = 'http://localhost:8000/users';
 
 const App = () => {
@@ -22,7 +23,6 @@ const App = () => {
   useEffect(() => {
     fetchPeople();
   }, []);
-
 
   if(loading){
     return (

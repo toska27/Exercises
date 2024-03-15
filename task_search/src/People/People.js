@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Person from '../Person/Person';
+import './people.css';
 
 const People = ({ people,query }) => {
 
@@ -30,7 +31,9 @@ const People = ({ people,query }) => {
                         )
                     })  
                     : 
-                    <tr><th className='no_matches'>No matches</th></tr>
+                    <tr>
+                        <th className='no_matches'>No matches</th>
+                    </tr>
                     }
                     <tr>
                         <td colSpan='4' className={newSearch.length>=10 ? 'buttons' : 'non_view'}>  
