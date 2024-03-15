@@ -1,7 +1,7 @@
 import React from 'react';
 import Person from './Person';
 
-function People({ people,query }) {
+const People = ({ people,query }) => {
 
     const search = (people) => {
         return people.filter(user => user.name.toLowerCase().includes(query) ||
@@ -9,7 +9,6 @@ function People({ people,query }) {
     }
 
     let newSearch = search(people).splice(0, 10);     // Treba da se uradi kada se stisne dugme more, da se pojavi vise 
-
 
     return (
         <div className='people'>

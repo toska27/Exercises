@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Person({ id, name, surname, email, gender }) {
+const Person = ({ id, name, surname, email, gender }) => {
   return (
     <tr>
       <td>{name}</td>

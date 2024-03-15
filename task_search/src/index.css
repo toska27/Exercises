@@ -28,6 +28,9 @@ code {
   justify-content: center;
   margin-top: 20px;
 }
+.loading{
+  text-align: center;
+}
 
 /*table*/
 th{
