@@ -9,7 +9,6 @@ th {
   background-color: bisque;
 }
 tr {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   background-color: beige;
 }
 th,
@@ -27,25 +26,8 @@ td {
   font-size: 20px;
 }
 
-/*buttons*/
 .buttons {
   background-color: rgb(184, 184, 183);
-}
-.more_view {
-  background-color: rgb(7, 119, 20);
-  color: rgb(242, 241, 241);
-  font-weight: 300;
-  cursor: pointer;
-  width: 50%;
-  height: 30px;
-}
-.less_view {
-  background-color: rgb(116, 11, 34);
-  color: rgb(242, 241, 241);
-  font-weight: 300;
-  cursor: pointer;
-  width: 50%;
-  height: 30px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -57,10 +39,5 @@ td {
   }
   table {
     border-collapse: collapse;
-  }
-  .more_view,
-  .less_view {
-    height: 20px;
-    font-size: 14px;
   }
 }

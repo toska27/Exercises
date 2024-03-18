@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import People from "../People/People";
 import Loading from "../Loading/Loading";
+import Input from "../Input/Input";
 import "./app.css";
 const url = "http://localhost:8000/users";
 
@@ -34,10 +35,10 @@ const App = () => {
 
   return (
     <div className="app">
-      <input
-        type="text"
-        placeholder="Search..."
-        className="search"
+      <Input
+        type={"text"}
+        placeholder={"Search..."}
+        className={"search"}
         onChange={(e) => setQuery(e.target.value)}
       />
       {people && <People people={people} query={query} />}

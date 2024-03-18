@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Person from "../Person/Person";
+import Button from "../Button/Button";
 import "./people.css";
 
 const People = ({ people, query }) => {
@@ -40,28 +41,22 @@ const People = ({ people, query }) => {
               colSpan="4"
               className={newSearch.length >= 10 ? "buttons" : "non_view"}
             >
-              {
-                <button
-                  className={
-                    count <= newSearch.length ? "more_view" : "non_view"
-                  }
-                  onClick={() => setCount(count + 10)}
-                >
-                  Show more
-                </button>
-              }
-              {
-                <button
-                  className={count > 10 ? "less_view" : "non_view"}
-                  onClick={() => setCount(count - 10)}
-                >
-                  Show less
-                </button>
-              }
+              <Button
+                className={count <= newSearch.length ? "more_view" : "non_view"}
+                onClick={() => setCount(count + 10)}
+                text="Show more"
+              />
+
+              <Button
+                className={count > 10 ? "less_view" : "non_view"}
+                onClick={() => setCount(count - 10)}
+                text="Show less"
+              />
             </td>
           </tr>
         </tbody>
       </table>
+      {console.log("Window Location: ", window.location)}
     </div>
   );
 };
