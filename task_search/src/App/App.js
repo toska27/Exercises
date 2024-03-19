@@ -33,13 +33,17 @@ const App = () => {
     );
   }
 
+  const handleChange = (event) => {
+    setQuery(event.target.value);
+  };
+
   return (
     <div className="app">
       <Input
         type={"text"}
         placeholder={"Search..."}
         className={"search"}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={handleChange}
       />
       {people && <People people={people} query={query} />}
     </div>
