@@ -1,5 +1,5 @@
-import React from 'react';
-import './person.css';
+import React from "react";
+import "./person.css";
 
 const Person = ({ id, name, surname, email, gender }) => {
   return (
@@ -10,6 +10,6 @@ const Person = ({ id, name, surname, email, gender }) => {
       <td>{gender}</td>
     </tr>
   );
-}
+};
 
 export default Person;
